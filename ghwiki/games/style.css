@@ -1,0 +1,68 @@
+body{
+    background-image: url(ghimages/mainwp.png);
+    background-position:center top;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+#maintitle {
+    padding: 1px;
+    text-align: center;
+    background-color: rgb(255, 99, 71, 0.288);
+    h1 {
+        color: azure;
+        letter-spacing: 3px;
+        text-shadow: 0px 12px 5px black;
+    }
+}
+#menubar{
+    position: sticky; top: 0;
+    background-color: rgba(255, 255, 255, 0);
+    ul {
+        list-style-type: none; /*Quitar viñetas de lista desordenada en CSS*/
+        margin: 0;
+        padding: 0;
+        background-color: #333333; /*// Configurar color de fondo de la lista*/
+        display: flex; /*Usar flexbox para alinear los elementos de la lista horizontalmente*/
+        justify-content: center; /*Centrar los elementos de la lista horizontalmente*/
+        overflow:visible; /*Evitar que los elementos flotantes se salgan del contenedor"ul"*/
+        /*width: 200px; Configurar ancho de la lista*/
+    }
+    /*
+    ul li {
+        float: left; Alinear los elementos de la lista horizontalmente
+    }
+    */
+    ul li a {
+        display: block; /*Hacer que los enlaces se comporten como bloques*/
+        color: white;
+        padding: 8px 16px;
+        text-decoration: none; /*Retirar subrayado de los atributos "a"*/
+        text-align: center; /*Centrar el texto dentro de los atributos "a"*/
+        /*background-color: aqua; // Configurar color de fondo los atributos "a"*/
+    }
+    ul li a:hover:not(.active) { /* Change the link and background color on hover */
+    background-color: #111111;
+    color: white;
+    }
+    ul li a.active {
+        background-color: #af534c;
+        color: white;
+    }
+}
+
+#gamescontent {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.445);
+    padding: 24px 36px;
+    margin: 20px 20px 20px 20px;
+    border: 5px solid rgba(173, 43, 10, 0.603);
+    h1 {
+        letter-spacing: 2px;
+    }
+    
+}
