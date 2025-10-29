@@ -1,9 +1,9 @@
 body{
-    background-image: url(../ghimages/mainwp.png);
+    background-image: url(../../../ghimages/mainwp.png);
     background-position:center top;
     background-repeat: no-repeat;
     background-color: black;
-    background-size: cover;
+    background-size:auto;
     margin: 0;
     padding: 0;
 }
@@ -70,12 +70,16 @@ body{
         margin-right: auto;
         border: 1px solid black;
         border-collapse: collapse; /* Combina los bordes de las celdas adyacentes */
-        width: 40%;
+        width: auto;
     }
     th, td 
     {
         border: 1px solid black;
         padding: 5px;
         text-align: center;
+    }
+    img {
+        margin: 80px 20px 20px 20px;
+
     }
 }

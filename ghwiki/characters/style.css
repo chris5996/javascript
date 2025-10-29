@@ -2,8 +2,8 @@ body{
     background-image: url(../ghimages/mainwp.png);
     background-position:center top;
     background-repeat: no-repeat;
-    background-color: black;
-    background-size: cover;
+    background-color: #220000;
+    background-size:contain;
     margin: 0;
     padding: 0;
 }
@@ -64,5 +64,16 @@ body{
     h1 {
         letter-spacing: 2px;
     }
-    
+    ul {
+        text-align: center;
+        display: inline-block;
+    }
+    li {
+        text-align: left;
+    }
+    img {
+        border: 3px solid rgba(173, 43, 10, 0.603);
+        margin: 10px 10px 10px 10px;
+        aspect-ratio: auto;
+    }
 }
