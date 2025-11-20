@@ -1,30 +1,17 @@
-body{
-    background-image: url(ghimages/mainwp.png);
-    background-position:center top;
-    background-repeat: no-repeat;
-    background-color: black;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
+body {
+    font-family: Arial, sans-serif; /* Configurar fuente del cuerpo del documento */
+    margin: 0; /* Eliminar margen predeterminado del cuerpo */
+    padding: 0; /* Eliminar relleno predeterminado del cuerpo */
+    background-image: url(../imghome/wallpaper.jpg);
+    background-color: white;
+    background-size:contain;
 }
-/*
-Estilos para la barra de menú de navegación
-*/
-
-#maintitle {
-    padding: 1px;
-    text-align: center;
-    background-color: rgb(255, 99, 71, 0.288);
-    h1 {
-        color: azure;
-        letter-spacing: 3px;
-        text-shadow: 0px 12px 5px black;
-    }
-}
-#menubar{
+#head {
     position: sticky; top: 0;
     background-color: rgba(255, 255, 255, 0);
     overflow:auto; /* Habilitar desplazamiento automático si el contenido desborda */
+    background-color: #333333; /* Color de fondo de la barra de navegación */
+
     ul {
         list-style-type: none; /*Quitar viñetas de lista desordenada en CSS*/
         margin: 0;
@@ -32,7 +19,6 @@ Estilos para la barra de menú de navegación
         background-color: #333333; /*// Configurar color de fondo de la lista*/
         display: flex; /*Usar flexbox para alinear los elementos de la lista horizontalmente*/
         justify-content: center; /*Centrar los elementos de la lista horizontalmente*/
-
         /*width: 200px; Configurar ancho de la lista*/
     }
     /*
@@ -57,15 +43,11 @@ Estilos para la barra de menú de navegación
         color: white;
     }
 }
-
-#homecontent {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.445);
-    padding: 24px 36px;
-    margin: 20px 20px 20px 20px;
-    border: 5px solid rgba(173, 43, 10, 0.603);
-    h1 {
-        letter-spacing: 2px;
-    }
-    
+footer {
+    background-color: #333333; /* Color de fondo del pie de página */
+    color: white; /* Color del texto del pie de página */
+    text-align: center; /* Centrar el texto del pie de página */
+    padding: 10px 0; /* Agregar relleno arriba y abajo del pie de página */
+    bottom: 0; /* Alinear el pie de página al fondo de la ventana */
+    width: 100%; /* Hacer que el pie de página ocupe todo el ancho */
 }

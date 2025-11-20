@@ -3,7 +3,7 @@ body{
     background-position:center top;
     background-repeat: no-repeat;
     background-color: black;
-    background-size:auto;
+    background-size:contain;
     margin: 0;
     padding: 0;
 }
@@ -20,7 +20,7 @@ body{
     }
 }
 #menubar{
-    position: sticky; top: 0;
+    position: sticky; top: 0; /* Mantener la barra de menú visible al hacer scroll */
     background-color: rgba(255, 255, 255, 0);
     ul {
         list-style-type: none; /*Quitar viñetas de lista desordenada en CSS*/

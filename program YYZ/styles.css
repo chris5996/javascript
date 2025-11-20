@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif; /* Configurar fuente del cuerpo del documento */
+    margin: 0; /* Eliminar margen predeterminado del cuerpo */
+    padding: 0; /* Eliminar relleno predeterminado del cuerpo */
+    background-image: url(imghome/wallpaper.jpg);
+    background-color: white;
+    background-size:contain;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #333333;
+    padding: 0;
+
+    display: flex;
+    justify-content: flex-start; /* Espacio entre los elementos */
+    align-items: center; /* Alinear verticalmente los elementos */
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegurar que la barra de navegación esté por encima de otros elementos */
+}
+
+.menu {
+    flex-grow: 1; /* Hacer que el menú ocupe todo el espacio disponible */
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 25px; /* Espacio entre los elementos de la lista */
+    justify-content: center; /* Centra el menú */
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #0011ff;
+    background-color: #111111;
+}
+
+
+footer {
+    background-color: #333333; /* Color de fondo del pie de página */
+    color: white; /* Color del texto del pie de página */
+    text-align: center; /* Centrar el texto del pie de página */
+    padding: 10px 0; /* Agregar relleno arriba y abajo del pie de página */
+    bottom: 0; /* Alinear el pie de página al fondo de la ventana */
+    width: 100%; /* Hacer que el pie de página ocupe todo el ancho */
+}
+main {
+    padding: 20px; /* Agregar relleno alrededor del contenido principal */
+    height: 700px;
+}
