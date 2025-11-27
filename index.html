@@ -1,31 +1,84 @@
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index CPR</title>
+    <title>TDS Site</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="homeimg/TDS_ico.png">
 </head>
 <body>
-    <h1>The Defragmented Stop</h1>
-    <ul class="menu">
-        <li class="menu"><a href="#home">Home</a></li>
-        <li class="menu"><a href="SalleM/index.html">La Salle Mollerussa</a></li>
-        <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Menu Desglosable</a>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-        </li>
-        <li class="menu"><a href="#news">Novedades</a></li>
-        <li class="menu"><a href="#contact">Contacto</a></li>
-        <li class="menu"><a href="ghwiki/index.html">GH Wiki</a></li>
-        <li style="float:right" class="menu"><a href="#about">About</a></li>
-    </ul>
-    <a href="https://www.w3schools.com/html/default.asp"><img src="homeimg/html5.png" alt="html logo" width="250" height="250"></a>
-    <a href="https://www.w3schools.com/css/default.asp"><img src="homeimg/css.png" alt="css logo" width="250" height="250"></a>
-    <a href="https://mollerussa.lasalle.cat/"><img src="homeimg/SalleMlogo.jpg" alt="LaSalle logo" width="300" height="150"></a>
-    <a href="https://github.com/chris5996"></a>
+    <header class="navbar">
+        <div class="logo">
+            <img src="homeimg/TDS_full_logo.png" alt="TDS logo" width="180" height="150">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a class="active" href="#home">HOME</a></li>
+                <li><a href="SalleM/index.html">PROYECTOS</a></li>
+                <li><a href="develops/index.html">DESARROLLO</a></li>
+                <li><a href="defrag_zone/index.html">ZONA DEFRAGMENTADA</a></li>
+                <li><a href="contacto/index.html">CONTACTO</a></li>
+                <li><a href="about/index.html">ABOUT</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main class="layout">
+
+        <div class="contenido">
+            <section id="home">
+                <h1>THE DEFRAGMENTED STOP . . .</h1>
+                <p>
+                    Bienvenido a la página principal de <strong>The Defragmented Stop</strong>, el portal para apasionados 
+                    de la programación y desarrollo de aplicaciones multiplataformas! <br><br>
+                    Aquí encontrarás una vista general de lo que estamos construyendo, junto con accesos rápidos a las secciones más importantes.
+                </p>
+            </section>
+            <section>
+                <h2>ENLACES Y ACCESOS</h2>
+                <p>Si te estas iniciando en el mundo de la programación da clic a las imagenes!</p>
+                <div class="slider-lenguajes">
+                    <a href="https://www.w3schools.com/html/default.asp"><img src="homeimg/html5.png" alt="HTML logo" width="250" height="250"></a>
+                    <a href="https://www.w3schools.com/css/default.asp"><img src="homeimg/css.png" alt="CSS logo" width="250" height="250"></a>
+                    <a href="https://www.w3schools.com/js/default.asp"><img src="homeimg/js.png" alt="JS logo" width="200" height="200"></a>
+                    <a href="https://sqlbolt.com/lesson/introduction"><img src="homeimg/sql.png" alt="SQL logo" width="250" height="250"></a>
+                </div>
+            </section>
+            <section>
+                <script>
+                    let nombre;
+                    let edad;
+                    let mail;
+                    let valor1;
+                    let valor2;
+                    nombre = prompt("¡Hola! ¿Cuál es tu nombre?");
+                    edad = prompt("¿Cuántos años tienes, " + nombre + "?");
+                    mail = prompt("Por último, ¿cuál es tu correo electrónico?")
+                    document.write("<h2>¡Bienvenido, " + nombre + "!</h2>");
+                    document.write("<p>Es genial saber que tienes " + edad + " años. ¡Esperamos que disfrutes explorando The Defragmented Stop!</p>");
+                    document.write("<p>Hemos registrado tu correo electrónico como: " + mail + "</p>");
+                </script>
+            </section>
+        </div>
+        <aside class="sidebar">
+            <h2>Proyectos Destacados: </h2>
+            <ul>
+                <li><a href="SalleM/foodtruck/index.html">Foodtruck</a></li>
+                <li><a href="SalleM/ghwiki/index.html">Wiki</a></li>
+                <li><a href="SalleM/program YYZ/index.html">Program YYZ</a></li>
+            </ul>
+
+            <h3>Noticias rápidas</h3>
+            <ul class="mini-news">
+                <li><a href="#nota2">Liquidos en blender</a></li>
+                <li><a href="#nota3">Colisiones en blender</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2025 The Defragmented Stop. Todos los derechos reservados.</p>
+    </footer>
+
+
 </body>
 </html>

@@ -1,0 +1,440 @@
+/* ===== RESET BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BASE ===== */
+body {
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f3f4f6;          /* gris claro */
+  color: #111827;               /* texto oscuro */
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===== CABECERA Y NAVEGACIÓN ===== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;          /* cabecera clara */
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.08);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-icon {
+  font-size: 2rem;
+}
+
+.logo-text h1 {
+  font-family: "Bebas Neue", system-ui, sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.08em;
+}
+
+.logo-text p {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #6b7280;
+}
+
+/* Menú principal */
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #111827;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.main-nav a:hover {
+  background: #e11d48;          /* rojo */
+  border-color: #f97316;        /* naranja */
+  color: #f9fafb;
+}
+
+/* Menú hamburguesa (móvil) */
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: #111827;
+}
+
+/* ===== HERO ===== */
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 2rem;
+  padding: 2.5rem 8vw;
+  background: linear-gradient(135deg, #fee2e2 0%, #fecaca 40%, #fef3c7 100%);
+}
+
+.hero-texto h2 {
+  font-family: "Bebas Neue", system-ui, sans-serif;
+  font-size: 2.8rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+}
+
+.hero-texto p {
+  max-width: 32rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-cta {
+  display: inline-block;
+  padding: 0.7rem 1.6rem;
+  background: #e11d48;
+  color: #f9fafb;
+  border-radius: 999px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.85rem;
+  border: 1px solid #f97316;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.btn-cta:hover {
+  background: #f97316;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Aside hero */
+
+.hero-aside {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.16);
+  border: 1px solid #e5e7eb;
+}
+
+.hero-aside h3 {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.75rem;
+}
+
+.hero-aside p {
+  margin-bottom: 0.5rem;
+}
+
+.hero-aside .precio {
+  font-weight: 700;
+  color: #d97706;
+}
+
+.hero-aside .nota {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+/* ===== SECCIONES GENERALES ===== */
+
+.section-header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.section-header h2 {
+  font-family: "Bebas Neue", system-ui, sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.3rem;
+}
+
+.section-header p {
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+/* ===== CARTA ===== */
+
+.seccion-carta {
+  padding: 1rem 8vw 3rem;
+  background: radial-gradient(circle at top, #ffe4e6 0%, #ffffff 55%);
+}
+
+.bloque-carta {
+  margin-top: 1.5rem;
+}
+
+.bloque-carta h3 {
+  font-family: "Bebas Neue", system-ui, sans-serif;
+  font-size: 1.7rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+/* Grid de platos */
+
+.grid-platos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.plato {
+  background: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.plato figure {
+  max-height: 210px;
+  overflow: hidden;
+}
+
+.plato img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.25s ease;
+}
+
+.plato-info {
+  padding: 1rem 1.25rem 1.2rem;
+}
+
+.plato h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.plato p {
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.precio {
+  margin-top: 0.6rem;
+  font-weight: 700;
+  color: #b45309;
+}
+
+/* Hover de platos */
+
+.plato:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 50px rgba(15, 23, 42, 0.18);
+}
+
+.plato:hover img {
+  transform: scale(1.07);
+}
+
+/* Bebidas con estilo algo diferente */
+
+.bebidas .plato.bebida {
+  min-height: 180px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== SOBRE NOSOTROS ===== */
+
+.sobre-nosotros {
+  padding: 2rem 8vw 3rem;
+  background: #ffffff;
+}
+
+.sobre-contenido {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+.sobre-contenido p + p {
+  margin-top: 0.8rem;
+}
+
+/* ===== UBICACIÓN ===== */
+
+.ubicacion {
+  padding: 2rem 8vw 3rem;
+  background: #f9fafb;
+}
+
+.ubicacion-contenido {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+/* ===== CONTACTO ===== */
+
+.contacto {
+  padding: 2rem 8vw 3.5rem;
+  background: linear-gradient(to top, #f3f4f6, #fee2e2);
+}
+
+.form-contacto {
+  max-width: 640px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1.8rem 1.6rem;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
+  border: 1px solid #e5e7eb;
+}
+
+.campo-form {
+  margin-bottom: 1rem;
+}
+
+.campo-form label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.campo-form input,
+.campo-form select,
+.campo-form textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  color: #111827;
+  font-size: 0.9rem;
+}
+
+.campo-form input:focus,
+.campo-form select:focus,
+.campo-form textarea:focus {
+  outline: none;
+  border-color: #f97316;
+  box-shadow: 0 0 0 1px #f97316;
+}
+
+/* ===== FOOTER ===== */
+
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #111827;
+  font-size: 0.8rem;
+  color: #e5e7eb;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-aside {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .grid-platos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Móvil */
+@media (max-width: 600px) {
+  .site-header {
+    padding-inline: 1rem;
+  }
+
+  .main-nav ul {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: #ffffff;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem 1rem 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+    display: none;
+  }
+
+  .main-nav ul li {
+    padding: 0.25rem 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  /* Mostrar menú cuando el checkbox está marcado */
+  #menu-toggle:checked ~ .main-nav ul {
+    display: flex;
+  }
+
+  .hero {
+    padding: 1.8rem 1.25rem;
+  }
+
+  .section-header {
+    padding-inline: 1.25rem;
+  }
+
+  .seccion-carta,
+  .sobre-nosotros,
+  .ubicacion,
+  .contacto {
+    padding-inline: 1.25rem;
+  }
+
+  .grid-platos {
+    grid-template-columns: 1fr;
+  }
+
+  .form-contacto {
+    padding-inline: 1.1rem;
+  }
+}

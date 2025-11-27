@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabores del Perú - Food Truck</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- CABECERA Y MENÚ -->
+  <header class="site-header">
+    <div class="logo">
+      <span class="logo-icon">🚚</span>
+      <div class="logo-text">
+        <h1>Sabores del Perú</h1>
+        <p>Food Truck</p>
+      </div>
+    </div>
+
+    <!-- Menú hamburguesa (solo HTML+CSS) -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú">
+      ☰
+    </label>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#carta">Carta</a></li>
+        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!-- SECCIÓN HERO / INICIO -->
+    <section id="inicio" class="hero">
+      <div class="hero-texto">
+        <h2>La ruta del sabor peruano</h2>
+        <p>
+          Platos típicos de la costa, sierra y selva del Perú en un solo food truck.
+          Recetas caseras, productos frescos y mucho corazón.
+        </p>
+        <a href="#carta" class="btn-cta">Ver la carta</a>
+      </div>
+
+      <aside class="hero-aside">
+        <h3>Combo del día</h3>
+        <p>
+          Tamalitos criollos + Inca Kola<br>
+          <span class="precio">9,50 €</span>
+        </p>
+        <p class="nota">
+          Pregunta por nuestras opciones veganas y sin picante.
+        </p>
+      </aside>
+    </section>
+
+    <!-- SECCIÓN CARTA -->
+    <section id="carta" class="seccion-carta">
+      <header class="section-header">
+        <h2>Carta</h2>
+        <p>Una selección de platos típicos peruanos y bebidas refrescantes.</p>
+      </header>
+
+      <!-- PLATOS PRINCIPALES -->
+      <section class="bloque-carta">
+        <h3>Platos principales</h3>
+        <div class="grid-platos">
+          <article class="plato">
+            <figure>
+              <img src="ftimg/tamalitos.png"
+                   alt="Tamalitos criollos con cebolla criolla">
+            </figure>
+            <div class="plato-info">
+              <h4>Tamalitos criollos con cebolla</h4>
+              <p>
+                Tamalitos de maíz amarillo rellenos con pollo y aceitunas,
+                envueltos en hoja de plátano y servidos con cebolla criolla
+                ligeramente picante.
+              </p>
+              <p class="precio">7,50 €</p>
+            </div>
+          </article>
+
+          <article class="plato">
+            <figure>
+              <img src="ftimg/ceviche.png"
+                   alt="Ceviche de pescado con chicharrón de pota">
+            </figure>
+            <div class="plato-info">
+              <h4>Ceviche de pescado con chicharrón de pota</h4>
+              <p>
+                Clásico ceviche de pescado marinado en limón, con cebolla roja,
+                choclo y camote, acompañado de crujiente chicharrón de pota recién
+                frito.
+              </p>
+              <p class="precio">10,50 €</p>
+            </div>
+          </article>
+
+          <article class="plato">
+            <figure>
+              <img src="ftimg/qapchi.png"
+                   alt="Crema de Q-apchi con papas sancochadas y huevo">
+            </figure>
+            <div class="plato-info">
+              <h4>Crema de Q-apchi con papas sancochadas y huevo</h4>
+              <p>
+                Crema caliente a base de quesillo y ají amarillo, servida sobre
+                papas sancochadas y huevo duro. Un plato reconfortante típico de
+                la sierra peruana.
+              </p>
+              <p class="precio">8,50 €</p>
+            </div>
+          </article>
+
+          <article class="plato">
+            <figure>
+              <img src="ftimg/humitas.png"
+                   alt="Humitas dulces o saladas">
+            </figure>
+            <div class="plato-info">
+              <h4>Humitas</h4>
+              <p>
+                Masa de maíz tierno molido, envuelta y cocida en las propias hojas
+                del choclo. Disponibles en versión salada con queso o dulce con un
+                toque de canela.
+              </p>
+              <p class="precio">6,00 €</p>
+            </div>
+          </article>
+
+          <article class="plato">
+            <figure>
+              <img src="ftimg/cecina.png"
+                   alt="Salchipapa de cecina">
+            </figure>
+            <div class="plato-info">
+              <h4>Salchipapa de cecina</h4>
+              <p>
+                Versión selvática de la clásica salchipapa: papas fritas doradas
+                acompañadas de trozos de cecina ahumada y salsas caseras.
+              </p>
+              <p class="precio">7,90 €</p>
+            </div>
+          </article>
+
+          <article class="plato">
+            <figure>
+              <img src="ftimg/tacacho.png"
+                   alt="Tacachos con trozos de cecina">
+            </figure>
+            <div class="plato-info">
+              <h4>Tacachos con trozos de cecina</h4>
+              <p>
+                Bolas de plátano verde asado y majado con manteca, servidas con
+                jugosos trozos de cecina de cerdo. Uno de los imprescindibles de
+                la selva peruana.
+              </p>
+              <p class="precio">9,20 €</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- BEBIDAS -->
+<section class="bloque-carta bebidas">
+  <h3>Bebidas</h3>
+  <div class="grid-platos">
+
+    <article class="plato bebida">
+      <figure>
+        <img src="ftimg/inca.png"
+             alt="Botella de Inca Kola">
+      </figure>
+      <div class="plato-info">
+        <h4>Inca Kola</h4>
+        <p>
+          Gaseosa peruana de color dorado y sabor dulce inconfundible,
+          perfecta para acompañar cualquier plato criollo.
+        </p>
+        <p class="precio">2,50 €</p>
+      </div>
+    </article>
+
+    <article class="plato bebida">
+      <figure>
+        <img src="ftimg/camu.png"
+             alt="Vaso de jugo de camu camu">
+      </figure>
+      <div class="plato-info">
+        <h4>Jugo de camu camu</h4>
+        <p>
+          Refresco natural elaborado con camu camu, fruto amazónico rico en
+          vitamina C, ligeramente ácido y muy refrescante.
+        </p>
+        <p class="precio">3,00 €</p>
+      </div>
+    </article>
+
+    <article class="plato bebida">
+      <figure>
+        <img src="ftimg/chicha.png"
+             alt="Vaso de chicha morada">
+      </figure>
+      <div class="plato-info">
+        <h4>Chicha morada</h4>
+        <p>
+          Bebida tradicional a base de maíz morado, piña, canela y clavo de
+          olor, servida bien fría y con el dulzor justo.
+        </p>
+        <p class="precio">2,80 €</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="sobre-nosotros" class="sobre-nosotros">
+      <header class="section-header">
+        <h2>Sobre Nosotros</h2>
+      </header>
+      <div class="sobre-contenido">
+        <p>
+          <strong>Sabores del Perú</strong> nace con la idea de llevar un pedacito
+          de cada región del país a las calles de la ciudad. Somos un equipo de
+          amigos peruanos apasionados por la cocina, que hemos adaptado recetas
+          tradicionales al formato food truck sin perder su esencia.
+        </p>
+        <p>
+          Nuestro objetivo es que puedas probar, en un mismo lugar, platos que
+          normalmente solo encontrarías viajando por la costa, la sierra y la
+          selva. Cuidamos la presentación, la calidad de los ingredientes y, sobre
+          todo, el sabor casero.
+        </p>
+      </div>
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section id="ubicacion" class="ubicacion">
+      <header class="section-header">
+        <h2>Ubicación y Horario</h2>
+      </header>
+      <div class="ubicacion-contenido">
+        <p>
+          🗺️ Nos encontrarás de martes a domingo en la zona de food trucks del
+          parque central (frente al auditorio).
+        </p>
+        <p>
+          ⏰ Horario: 12:30 - 16:00 y 19:30 - 23:30.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACTO / FORMULARIO -->
+    <section id="contacto" class="contacto">
+      <header class="section-header">
+        <h2>Contacto</h2>
+        <p>¿Tienes dudas, quieres hacer un pedido grande o reservar el food truck?</p>
+      </header>
+
+      <form class="form-contacto">
+        <div class="campo-form">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="campo-form">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="campo-form">
+          <label for="region">Región de tu plato favorito</label>
+          <select id="region" name="region">
+            <option value="">Selecciona una región</option>
+            <option value="costa">Costa</option>
+            <option value="sierra">Sierra</option>
+            <option value="selva">Selva</option>
+          </select>
+        </div>
+
+        <div class="campo-form">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4"
+                    placeholder="Cuéntanos tu idea, pedido o consulta..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-cta">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Sabores del Perú Food Truck. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
