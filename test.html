@@ -1,0 +1,91 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test HTML</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="homeimg/TDS_full_logo.png" alt="TDS logo" width="180" height="150">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a class="active" href="#home">Inicio</a></li>
+                <li><a href="#test">Pestaña 2</a></li>
+                <li><a href="#test">Pestaña 3</a></li>
+                <li><a href="#test">Pestaña 4</a></li>
+                <li><a href="#test">Pestaña 5</a></li>
+                <li><a href="#test">Pestaña 6</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <a href="https://www.w3schools.com/html/default.asp"><img src="homeimg/html5.png" alt="HTML logo" width="250" height="250"></a>
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <a href="https://www.w3schools.com/css/default.asp"><img src="homeimg/css.png" alt="CSS logo" width="250" height="250"></a>
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <a href="https://www.w3schools.com/js/default.asp"><img src="homeimg/js.png" alt="JS logo" width="200" height="200"></a>
+                <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+            }
+        </script>
+    </main>
+    <footer>
+        <p>&copy; 2096 Test HTML Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
